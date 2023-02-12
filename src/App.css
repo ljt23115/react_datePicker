@@ -1,0 +1,100 @@
+.App {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App .time-picker {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 400px;
+}
+.App .time-picker .header {
+  border-bottom: 1px solid black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 5px;
+}
+.App .time-picker .header input {
+  background: none;
+  outline: none;
+  border: none;
+  border: 1px solid #afa8a8;
+  border-radius: 5px;
+}
+.App .time-picker .main {
+  padding: 15px;
+  height: 300px;
+}
+.App .time-picker .main .ym-change {
+  display: flex;
+  justify-content: space-between;
+}
+.App .time-picker .main .ym-change .year-month {
+  text-align: center;
+  width: 65%;
+}
+.App .time-picker .main .weeks {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.App .time-picker .main .weeks span {
+  text-align: center;
+  width: 14%;
+}
+.App .time-picker .main .days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.App .time-picker .main .days span {
+  text-align: center;
+  width: 14%;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.App .time-picker .footer {
+  border-top: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.App .time-picker .footer button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.App .time-input {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 200px;
+}
+.App .time-input .icon {
+  line-height: 16px;
+  margin-left: 10px;
+  color: #807878;
+}
+.App .time-input .icon svg {
+  height: 16px;
+  width: 16px;
+  padding-top: 2px;
+}
+.App .time-input input {
+  background: none;
+  outline: none;
+  border: none;
+  margin-left: 5px;
+}
